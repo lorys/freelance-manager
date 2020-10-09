@@ -49,3 +49,19 @@ h1.title {
 .menu div:hover {
   background-color: rgb(78,78,78);
 }
+
+.xcenter {
+  transform: translateX(-50%) translateY(-50%);
+  left: 60vw;
+  position: absolute;
+  top: 50vh;
+}
+
+.homescreen {
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.1);
+  width: 70vw;
+  height: 60vh;
+  padding: 20px;
+  color: white;
+}
