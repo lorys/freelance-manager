@@ -1,13 +1,10 @@
 import React,{ useState } from 'react';
-import Menu from './Menu';
 import '../App.css';
 
-function Home(props) {
-    const { navigate, currentPage } = props;
+function Home() {
     return (
-        <Menu navigate={navigate} currentScreen={currentPage}/>
+        <div className="homescreen xcenter"><h1>Bienvenu(e) !</h1><p>Vous trouverez ici tout ce dont vous avez besoin pour gérer vos affaires !</p></div>
     );
-
 }
 
 export default Home;

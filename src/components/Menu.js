@@ -25,7 +25,6 @@ function Menu(props) {
             <Button onClick={() => navigate("revenusrevenu")}>Revenu</Button>
         </div>
     );
-
 }
 
 export default Menu;
