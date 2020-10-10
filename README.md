@@ -2,6 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to run it
+
+```bash
+git clone https://github.com/lorys/freelance-manager.git
+cd freelance-manager
+yarn install
+yarn start &; yarn electron-dev
+```
+
+That's it !
+
 ## Available Scripts
 
 In the project directory, you can run:
