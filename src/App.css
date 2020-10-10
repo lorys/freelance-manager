@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(98,98,98);
+  background-color: rgb(28,28,28);
 }
 
 h1.title {
@@ -27,8 +27,8 @@ h1.title {
   top: 50vh;
   transform: translateY(-50%);
   width: 15vw;
+  height: 100vh;
   background-color: rgb(68, 68, 68);
-  border-radius: 0px 10px 10px 0px;
   color: white;
 }
 
@@ -58,8 +58,6 @@ h1.title {
 }
 
 .homescreen {
-  border-radius: 10px;
-  background-color: rgba(0,0,0,0.1);
   width: 70vw;
   height: 60vh;
   padding: 20px;
