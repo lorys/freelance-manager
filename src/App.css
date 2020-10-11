@@ -11,16 +11,6 @@ h1.title {
   color: rgba(0,0,0,0.6);
 }
 
-.form {
-  position: absolute;
-  left: 50vw;
-  transform: translateX(-50%);
-  width: 40vw;
-  display: inline-block;
-  margin: auto;
-  padding: 20px;
-}
-
 .menu {
   position: absolute;
   left: 0;
@@ -62,4 +52,53 @@ h1.title {
   height: 60vh;
   padding: 20px;
   color: white;
+}
+
+.modal {
+  position: fixed;
+  display: block;
+  width: 30vw;
+  background-color: rgba(255,255,255,1);
+  border-radius: 10px;
+  padding: 20px;
+  top: 45vh;
+  left: 50vw;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 2;
+}
+
+.modal h3 {
+  text-align: center;
+}
+
+.modal input[type=text], .modal input[type=mail], .modal input[type=number] {
+  padding: 10px;
+  border: none;
+  display: block;
+  background-color: rgba(0,0,0,0.1);
+  width: 25vw;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.modal button {
+  font-size: 25px;
+  padding: 10px;
+  color: white;
+  border: none;
+  background-color: rgba(39, 174, 96,1.0);
+  width: 25vw;
+  display: block;
+  margin: auto;
+}
+
+.background-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
 }
