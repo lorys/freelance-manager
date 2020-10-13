@@ -1,7 +1,8 @@
 import React,{ useState } from 'react';
 import './App.css';
 import Menu from './components/Menu';
-import Home from './components/Home';
+import Home from './screen/Home';
+import Devis from './screen/Devis';
 
 const { ipcRenderer, remote } = window.require('electron');
 const fs = remote.require("fs");
@@ -15,7 +16,8 @@ function App() {
   const [ screen, setScreen ] = useState("home");
   
   const screens = new Array();
-  screens['home'] = <Home navigate={setScreen}/>
+  screens['home'] = <Home navigate={setScreen}/>;
+  screens['devis'] = <Devis navigate={setScreen}/>;
 
   const Screen = () => screens[screen];
   return (

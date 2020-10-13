@@ -23,6 +23,7 @@ function ClientList() {
                 // console.log(files);
             }
         });
+        return (() => {  });
     });
 
     if (!fs.existsSync("./data/customers/") || !clientsExists)
@@ -49,7 +50,7 @@ function AddClient({ closeModal }) {
                     const phoneNumber = document.getElementById('phoneNumber').value;
                     fs.writeFile('./data/customers/'+companyName+".json", JSON.stringify({companyName, postalAdress, mailAdress, phoneNumber}), function (err) {
                         if (err) throw err;
-                      });
+                    });
                 }}>Enregistrer</button>
             </div>
         </React.Fragment>
@@ -69,7 +70,7 @@ function Home({ navigate }) {
             <h1>Clients <Icon onClick={() => { setAddClient(!addClient); }}>add_circle</Icon></h1>
             <hr/>
             <ClientList />
-            <h1>Devis</h1>
+            <h1>Devis <Icon onClick={() => { navigate("devis"); }}>create</Icon></h1>
             <hr/>
             <DevisList />
         </div>

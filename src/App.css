@@ -65,6 +65,7 @@ h1.title {
   left: 50vw;
   transform: translateX(-50%) translateY(-50%);
   z-index: 2;
+  box-shadow: 0px 0px 100px 50px black;
 }
 
 .modal h3 {
