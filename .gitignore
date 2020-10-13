@@ -13,6 +13,9 @@ yarn.lock
 # production
 /build
 
+# Webapp Data
+/data
+
 # misc
 .DS_Store
 .env.local
